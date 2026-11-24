@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codecraft — Technology Education for Everyone</title>
+  <meta name="description" content="Codecraft is a technology education resource covering web development, data science, and cybersecurity learning paths.">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome icons (CSS only, no JavaScript required) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Shared stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER & NAVIGATION ===================== -->
+  <header class="site-header">
+    <div class="wrapper">
+      <a href="index.html" class="brand">
+        <i class="fa-solid fa-code"></i>
+        <span>Codecraft</span>
+      </a>
+
+      <!-- CSS-only responsive menu: checkbox + label, no JavaScript -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="details.html" class="nav-link">Information</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section class="hero">
+      <div class="wrapper">
+        <div class="hero-content">
+          <h1>Technology education that keeps pace with the field</h1>
+          <p>Codecraft breaks down web development, data science, and cybersecurity into clear learning paths, so you know exactly what to study next and why it matters.</p>
+          <div class="hero-actions">
+            <a href="details.html" class="btn btn-primary">Explore the learning paths</a>
+            <a href="contact.html" class="btn btn-outline">Request guidance</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=70" alt="Student working on code across multiple monitors">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTENT CARDS ===================== -->
+    <section class="tracks">
+      <div class="wrapper">
+        <div class="section-heading">
+          <h2>Three ways to start learning</h2>
+          <p>Each track is built around real skills employers ask for, not just theory.</p>
+        </div>
+
+        <div class="card-grid">
+          <!-- Card 1 -->
+          <article class="card">
+            <div class="card-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <h3>Web Development</h3>
+            <p>Learn HTML, CSS, and JavaScript fundamentals, then move into responsive design and modern frameworks used to build real websites.</p>
+            <a href="details.html" class="card-link">Read the curriculum &rsaquo;</a>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card">
+            <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <h3>Data Science &amp; AI</h3>
+            <p>Understand how data is cleaned, analyzed, and modeled, and get an honest introduction to how machine learning systems are trained.</p>
+            <a href="details.html" class="card-link">Read the curriculum &rsaquo;</a>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card">
+            <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>Cybersecurity</h3>
+            <p>Study network fundamentals, common attack patterns, and the defensive practices that keep systems and user data safe.</p>
+            <a href="details.html" class="card-link">Read the curriculum &rsaquo;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ADDITIONAL INFORMATION ===================== -->
+    <section class="split-section">
+      <div class="wrapper">
+        <div>
+          <h2>Why structured tech education matters</h2>
+          <p>Self-teaching from scattered tutorials often leaves gaps. Codecraft organizes learning into a sequence, so each new topic builds on a skill you've already practiced instead of assuming knowledge you don't have yet.</p>
+          <ul class="fact-list">
+            <li>Technology roles consistently rank among the fastest-growing occupations tracked by labor researchers.</li>
+            <li>Employers increasingly value demonstrated project work alongside formal credentials.</li>
+            <li>Foundational skills in logic and problem-solving transfer across every technology specialty.</li>
+          </ul>
+        </div>
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=70" alt="Student writing code on a laptop at a desk">
+      </div>
+    </section>
+
+    <!-- ===================== CALL TO ACTION ===================== -->
+    <section class="cta-band">
+      <div class="wrapper">
+        <h2>Not sure which track fits you?</h2>
+        <p>Send us a short message about your goals and we'll point you toward the right starting point.</p>
+        <a href="contact.html" class="btn btn-primary">Get in touch</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="wrapper">
+      <div class="footer-grid">
+        <div>
+          <span class="brand"><i class="fa-solid fa-code"></i> Codecraft</span>
+          <p>Codecraft is an educational resource that organizes technology learning into clear, practical tracks for self-directed students.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="details.html">Information</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Codecraft. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

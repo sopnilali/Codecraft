@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Registration — Codecraft</title>
+  <meta name="description" content="Register your interest in a Codecraft technology education track or get in touch with questions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER & NAVIGATION ===================== -->
+  <header class="site-header">
+    <div class="wrapper">
+      <a href="index.html" class="brand">
+        <i class="fa-solid fa-code"></i>
+        <span>Codecraft</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="details.html" class="nav-link">Information</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== PAGE INTRODUCTION ===================== -->
+    <section class="page-intro">
+      <div class="wrapper">
+        <h1>Register your interest</h1>
+        <p>Fill out the form below to request guidance on a learning track, or reach us directly using the contact details alongside it. This is a front-end demo form and does not submit data anywhere.</p>
+      </div>
+    </section>
+
+    <!-- ===================== FORM + CONTACT INFO ===================== -->
+    <section class="form-section">
+      <div class="wrapper">
+
+        <!-- ===== Registration form ===== -->
+        <form class="contact-form" action="#" method="get">
+
+          <fieldset>
+            <legend>Your details</legend>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="full-name">Full name</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Jordan Smith" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" placeholder="jordan@example.com" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+1 555 123 4567" pattern="[0-9+\s\-]{7,15}">
+              </div>
+              <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" placeholder="18" min="10" max="99">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="start-date">Preferred start date</label>
+                <input type="date" id="start-date" name="start-date">
+              </div>
+              <div class="form-group">
+                <label for="category">Learning track</label>
+                <select id="category" name="category" required>
+                  <option value="" disabled selected>Select a track</option>
+                  <option value="web-dev">Web Development</option>
+                  <option value="data-science">Data Science &amp; AI</option>
+                  <option value="cybersecurity">Cybersecurity</option>
+                  <option value="ui-ux">UI/UX Design</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Learning preferences</legend>
+
+            <div class="form-group">
+              <label>Preferred learning format</label>
+              <div class="choice-group">
+                <span class="choice-item">
+                  <input type="radio" id="format-online" name="format" value="online" checked>
+                  <label for="format-online">Online</label>
+                </span>
+                <span class="choice-item">
+                  <input type="radio" id="format-inperson" name="format" value="in-person">
+                  <label for="format-inperson">In-person</label>
+                </span>
+                <span class="choice-item">
+                  <input type="radio" id="format-hybrid" name="format" value="hybrid">
+                  <label for="format-hybrid">Hybrid</label>
+                </span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Areas of interest</label>
+              <div class="choice-group">
+                <span class="choice-item">
+                  <input type="checkbox" id="interest-programming" name="interests" value="programming">
+                  <label for="interest-programming">Programming</label>
+                </span>
+                <span class="choice-item">
+                  <input type="checkbox" id="interest-design" name="interests" value="design">
+                  <label for="interest-design">Design</label>
+                </span>
+                <span class="choice-item">
+                  <input type="checkbox" id="interest-ai" name="interests" value="ai">
+                  <label for="interest-ai">Artificial intelligence</label>
+                </span>
+                <span class="choice-item">
+                  <input type="checkbox" id="interest-networking" name="interests" value="networking">
+                  <label for="interest-networking">Networking &amp; security</label>
+                </span>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Additional information</legend>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us about your background and goals..."></textarea>
+            </div>
+          </fieldset>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Submit request</button>
+            <button type="reset" class="btn btn-reset">Reset form</button>
+          </div>
+        </form>
+
+        <!-- ===== Contact information panel ===== -->
+        <aside class="contact-info">
+          <h3>Other ways to reach us</h3>
+          <p>Prefer not to use the form? Reach out directly using the details below &mdash; we typically respond within two business days.</p>
+          <ul>
+            <li><i class="fa-solid fa-envelope"></i> <span>hello@codecraft-education.example</span></li>
+            <li><i class="fa-solid fa-phone"></i> <span>+1 (555) 212-0198</span></li>
+            <li><i class="fa-solid fa-location-dot"></i> <span>142 Learning Lane, Suite 4, Austin, TX</span></li>
+            <li><i class="fa-solid fa-clock"></i> <span>Office hours: Mon&ndash;Fri, 9:00 AM &ndash; 5:00 PM</span></li>
+          </ul>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="wrapper">
+      <div class="footer-grid">
+        <div>
+          <span class="brand"><i class="fa-solid fa-code"></i> Codecraft</span>
+          <p>Codecraft is an educational resource that organizes technology learning into clear, practical tracks for self-directed students.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="details.html">Information</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Codecraft. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
